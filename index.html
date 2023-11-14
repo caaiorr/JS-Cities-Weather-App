@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="stylesheet" href="./CSS/style.css">
+
+   <title>Cities Weather Infos</title>
+</head>
+<body>
+   <section class="mainContainer container">
+      <h1 class="mainTitle text-center text-primary">Cities Weather Infos</h1>
+      <form data-js="searchForm">
+         <div class="text-center mb-3 my-3">
+            <label for="nameCity" class="form-label text-light">Digite o nome de uma cidade</label>
+            <input type="text" class="inptSearch form-control bg-black" name="nameCity" placeholder="Ex: Limeira">
+            <button type="submit" class="btnSearch btn btn-primary mt-1">Enviar</button>
+          </div>
+      </form>
+      <article data-js="card" class="mainCard card text-center p-4 bg-primary">
+         <div data-js="iconCity" name="timeIcon"></div>
+         <h2 data-js="nameCity" class="text-center text-light fontMsg">[ 'Baixe o projeto em um servidor local para utilizar as funcionalidades do App.' ]</h2>
+         <h3 data-js="weatherCity" name="weatherState" class="text-light">Clima da Cidade</h3>
+         <div class="temperatureContainer text-light">
+            <p data-js="temperatureCity">99</p><span>&deg;C</span>
+         </div>
+      </article>
+   </section>
+   <footer>
+      <p class="m-auto mt-5 pt-2 text-light text-center">Desenvolvido por Caio V. Rodrigues</p>
+   </footer>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" integrity="sha512-H+rglffZ6f5gF7UJgvH4Naa+fGCgjrHKMgoFOGmcPTRwR6oILo5R+gtzNrpDp7iMV3udbymBVjkeZGNz1Em4rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+   <script type="module" src="./JS/api-connection.js"></script>
+   <script type="module" src="./JS/index.js"></script>
+</body>
+</html>
